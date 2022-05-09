@@ -43,7 +43,7 @@ function App() {
               <Stars />
             </div>
             <div className='row text-container'>
-              <h2>How did we do</h2>
+              <h2>How did we do?</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
 
