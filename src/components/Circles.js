@@ -1,9 +1,13 @@
 import React from 'react'
 
-function Circles() {
+function Circles (props) {
+
+  // const geTheNumber = () =>{
+  //   setSelectedNum(props.number)
+  // }
 
   return (
-    <div className='circle'></div>
+    <button  onClick={() => props.setValue(props.number)}className='circle' value={props.name} >{props.number}</button>
   )
 }
 

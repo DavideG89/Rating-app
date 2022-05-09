@@ -1,12 +1,14 @@
 import React from 'react'
 
-const Button = ({text}) => {
+const Button = (props) => {
+
+  const handleClick = () => {
+    props.setSubmitted(true)
+  }
   return (
-    <button className='button'>{text}</button>
+    <button type="submit" className='button'  onClick={handleClick} >{props.text}</button>
   )
 }
 
-Button.defaultProps= {
-    text: 'Submit'
-}
+
 export default Button

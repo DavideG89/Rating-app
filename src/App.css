@@ -1,4 +1,4 @@
-.contain{
+.contain-bk{
 background-color: hsl(216, 12%, 8%);
 width: 100vw;
 height: 100vh;
@@ -6,35 +6,93 @@ margin: 0 auto;
 display: flex;
 justify-content: center;
 align-items: center;
+font-size:12px;
 }
-.square{
+
+.star{
+  flex-direction: column;
+  justify-content: center;
+  line-height: 0px;
+  width: 40px;
+  height:40px;
+  align-items: center;
+  border-radius: 100%;
+  background-color: hsl(214, 14%, 23%);
+}
+.square , .thanks-page{
   background-color: hsl(213, 19%, 18%);
-  width: 400px;
+  width: 350px;
   height: 350px;
-  border-radius: 5px;
+  border-radius: 5%;
   flex-direction: column;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+}
+.thanks-page{
+  padding-top: 40px;
+  padding-bottom: 25px;
+}
+.container-text{
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+}
+.container-second{
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
 }
-.stars{
-display: flex;
-width: 300px;
+.circle-container{
+  width: 100%;
+  height: 60px;
+  padding-bottom: 0px;
 }
 .circle{
-  background-color: hsl(213, 19%, 18%);
-  width: 50px;
-  height: 50px;
-  border: 1px solid black;
+  background-color: hsl(214, 14%, 23%);
+  width: 50px ; 
+  height: 50px ;
+  border: 1px solid hsl(213, 19%, 18%);
   border-radius: 100%;
   color:white;
+  display: flex;
+  align-items: center;
+  margin:5px;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s ;
+  font-weight: bold;
 }
+.circle:hover{
+  background-color: hsl(216, 12%, 54%)
+}
+.circle:focus{
+  background-color: hsl(25, 97%, 53%);
+}
+
 .button{
+  background-color: hsl(25, 97%, 53%);
+  border:none;
   width: 300px;
   height: 45px;
-  color:hsl(25, 97%, 53%);
+  color:white;
   font-weight: bold;
   border-radius: 50px;
+  transition: 0.4s;
+}
+.button:hover{
+  background-color: white;
+  color: hsl(25, 97%, 53%);
 }
 h2{
   color:white;
@@ -44,5 +102,14 @@ p{
 }
 .text-container{
 width: 100%;
+}
+.shape-info{
+  width: 200px;
+  height:30px;
+  line-height:30px;
+  text-align: center;
+  border-radius: 50px;
+  color: hsl(25, 97%, 53%);
+  background-color:hsl(214, 14%, 23%);
 
 }
